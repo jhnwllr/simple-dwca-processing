@@ -40,8 +40,7 @@ public class App
 		String day = rec.value(DwcTerm.day);
 		
 		ParseResult<TemporalAccessor> ta = dateParser.parse(year, month, day);
-        LocalDate localDate = LocalDate.from(ta.getPayload());
-		localDate = LocalDate.from(ta.getPayload());
+		LocalDate localDate = LocalDate.from(ta.getPayload());
 
 		System.out.println(String.format("%s %s %s %s %s", id, year, month, day,localDate));
 		}
